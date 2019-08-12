@@ -18,6 +18,7 @@ Currently defined in `Common/Config`, shouldn't be stored in the codebase for se
 
 ### Clean Architecture
 Feature first (i.e. `Round Up`), then layers. Layer boundaries have been implemented using protocols.
+
 ![Xcode Project](https://github.com/horothesun/BankRoundUp/blob/master/images/xcodeProject.png)
 
 ### Full-Rx

@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		374A947DA3A5A92309D1B5FE /* Pods_BankRoundUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B06D3A4814C3BFE0CF89471D /* Pods_BankRoundUpTests.framework */; };
+		B326E19F230171E400884ED2 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E182230171E400884ED2 /* UIViewController+ShowAlert.swift */; };
+		B326E1A0230171E400884ED2 /* Date+StartOfWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E183230171E400884ED2 /* Date+StartOfWeek.swift */; };
+		B326E1A1230171E400884ED2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E184230171E400884ED2 /* Config.swift */; };
+		B326E1A2230171E400884ED2 /* DateFormatter+ISO8601Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E185230171E400884ED2 /* DateFormatter+ISO8601Custom.swift */; };
+		B326E1A3230171E400884ED2 /* Date+FromDayMonthYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E186230171E400884ED2 /* Date+FromDayMonthYear.swift */; };
+		B326E1A4230171E400884ED2 /* UUIDGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E187230171E400884ED2 /* UUIDGenerator.swift */; };
+		B326E1A5230171E400884ED2 /* Array+GroupBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E188230171E400884ED2 /* Array+GroupBy.swift */; };
+		B326E1A6230171E400884ED2 /* EmptyWeeklyRoundUpsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E18C230171E400884ED2 /* EmptyWeeklyRoundUpsTableViewDataSource.swift */; };
+		B326E1A7230171E400884ED2 /* NonEmptyWeeklyRoundUpsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E18D230171E400884ED2 /* NonEmptyWeeklyRoundUpsTableViewDataSource.swift */; };
+		B326E1A8230171E400884ED2 /* WeekSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E18E230171E400884ED2 /* WeekSelectionViewController.swift */; };
+		B326E1A9230171E400884ED2 /* WeeklyRoundUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E18F230171E400884ED2 /* WeeklyRoundUpTableViewCell.swift */; };
+		B326E1AA230171E400884ED2 /* RoundUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E190230171E400884ED2 /* RoundUpViewController.swift */; };
+		B326E1AB230171E400884ED2 /* WeeklyRoundUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E192230171E400884ED2 /* WeeklyRoundUp.swift */; };
+		B326E1AC230171E400884ED2 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E193230171E400884ED2 /* Transaction.swift */; };
+		B326E1AD230171E400884ED2 /* SavingsGoalDepositBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E195230171E400884ED2 /* SavingsGoalDepositBusinessLogic.swift */; };
+		B326E1AE230171E400884ED2 /* WeeklyRoundUpsBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E196230171E400884ED2 /* WeeklyRoundUpsBusinessLogic.swift */; };
+		B326E1AF230171E400884ED2 /* SavingsGoalCreationBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E197230171E400884ED2 /* SavingsGoalCreationBusinessLogic.swift */; };
+		B326E1B0230171E400884ED2 /* RoundUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E199230171E400884ED2 /* RoundUpPresenter.swift */; };
+		B326E1B1230171E400884ED2 /* WeekSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E19A230171E400884ED2 /* WeekSelectionPresenter.swift */; };
+		B326E1B2230171E400884ED2 /* TransactionsFetchingGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E19C230171E400884ED2 /* TransactionsFetchingGateway.swift */; };
+		B326E1B3230171E400884ED2 /* SavingsGoalCreationGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E19D230171E400884ED2 /* SavingsGoalCreationGateway.swift */; };
+		B326E1B4230171E400884ED2 /* SavingsGoalDepositGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E19E230171E400884ED2 /* SavingsGoalDepositGateway.swift */; };
+		B326E1C42301724100884ED2 /* FakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E1B62301724100884ED2 /* FakeError.swift */; };
+		B326E1C52301724100884ED2 /* Nimble+RxTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E1B82301724100884ED2 /* Nimble+RxTest.swift */; };
+		B326E1C72301724100884ED2 /* Date+StartOfWeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E1BB2301724100884ED2 /* Date+StartOfWeekTests.swift */; };
+		B326E1C82301724100884ED2 /* Array+GroupByTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E1BC2301724100884ED2 /* Array+GroupByTests.swift */; };
+		B326E1C92301724100884ED2 /* TransactionsFetchingGatewayStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E1BF2301724100884ED2 /* TransactionsFetchingGatewayStubs.swift */; };
+		B326E1CA2301724100884ED2 /* WeeklyRoundUpsBusinessLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E1C12301724100884ED2 /* WeeklyRoundUpsBusinessLogicTests.swift */; };
+		B326E1CB2301724100884ED2 /* TransactionsFetchingGateway_ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326E1C32301724100884ED2 /* TransactionsFetchingGateway_ResponseTests.swift */; };
+		B37B91B0230160C600C66446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B91AF230160C600C66446 /* AppDelegate.swift */; };
+		B37B91B7230160C800C66446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37B91B6230160C800C66446 /* Assets.xcassets */; };
+		B37B91BA230160C800C66446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37B91B8230160C800C66446 /* LaunchScreen.storyboard */; };
+		EB8494704785587E3F14F794 /* Pods_BankRoundUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B591184CBA897F9CCE091A /* Pods_BankRoundUp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B37B91C1230160C800C66446 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B37B91A4230160C600C66446 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37B91AB230160C600C66446;
+			remoteInfo = BankRoundUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B4B4A16695DA016ED2CD530 /* Pods-BankRoundUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankRoundUpTests.release.xcconfig"; path = "Target Support Files/Pods-BankRoundUpTests/Pods-BankRoundUpTests.release.xcconfig"; sourceTree = "<group>"; };
+		6637601DAF0D71DFEF3D9A0B /* Pods-BankRoundUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankRoundUpTests.debug.xcconfig"; path = "Target Support Files/Pods-BankRoundUpTests/Pods-BankRoundUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75DD3D2FA6324B43347EA1E2 /* Pods-BankRoundUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankRoundUp.release.xcconfig"; path = "Target Support Files/Pods-BankRoundUp/Pods-BankRoundUp.release.xcconfig"; sourceTree = "<group>"; };
+		9BFA386296024E160C1162A2 /* Pods-BankRoundUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankRoundUp.debug.xcconfig"; path = "Target Support Files/Pods-BankRoundUp/Pods-BankRoundUp.debug.xcconfig"; sourceTree = "<group>"; };
+		B06D3A4814C3BFE0CF89471D /* Pods_BankRoundUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankRoundUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B326E182230171E400884ED2 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
+		B326E183230171E400884ED2 /* Date+StartOfWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+StartOfWeek.swift"; sourceTree = "<group>"; };
+		B326E184230171E400884ED2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B326E185230171E400884ED2 /* DateFormatter+ISO8601Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601Custom.swift"; sourceTree = "<group>"; };
+		B326E186230171E400884ED2 /* Date+FromDayMonthYear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+FromDayMonthYear.swift"; sourceTree = "<group>"; };
+		B326E187230171E400884ED2 /* UUIDGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDGenerator.swift; sourceTree = "<group>"; };
+		B326E188230171E400884ED2 /* Array+GroupBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+GroupBy.swift"; sourceTree = "<group>"; };
+		B326E18C230171E400884ED2 /* EmptyWeeklyRoundUpsTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyWeeklyRoundUpsTableViewDataSource.swift; sourceTree = "<group>"; };
+		B326E18D230171E400884ED2 /* NonEmptyWeeklyRoundUpsTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonEmptyWeeklyRoundUpsTableViewDataSource.swift; sourceTree = "<group>"; };
+		B326E18E230171E400884ED2 /* WeekSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekSelectionViewController.swift; sourceTree = "<group>"; };
+		B326E18F230171E400884ED2 /* WeeklyRoundUpTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyRoundUpTableViewCell.swift; sourceTree = "<group>"; };
+		B326E190230171E400884ED2 /* RoundUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUpViewController.swift; sourceTree = "<group>"; };
+		B326E192230171E400884ED2 /* WeeklyRoundUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyRoundUp.swift; sourceTree = "<group>"; };
+		B326E193230171E400884ED2 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B326E195230171E400884ED2 /* SavingsGoalDepositBusinessLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsGoalDepositBusinessLogic.swift; sourceTree = "<group>"; };
+		B326E196230171E400884ED2 /* WeeklyRoundUpsBusinessLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyRoundUpsBusinessLogic.swift; sourceTree = "<group>"; };
+		B326E197230171E400884ED2 /* SavingsGoalCreationBusinessLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsGoalCreationBusinessLogic.swift; sourceTree = "<group>"; };
+		B326E199230171E400884ED2 /* RoundUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUpPresenter.swift; sourceTree = "<group>"; };
+		B326E19A230171E400884ED2 /* WeekSelectionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekSelectionPresenter.swift; sourceTree = "<group>"; };
+		B326E19C230171E400884ED2 /* TransactionsFetchingGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsFetchingGateway.swift; sourceTree = "<group>"; };
+		B326E19D230171E400884ED2 /* SavingsGoalCreationGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsGoalCreationGateway.swift; sourceTree = "<group>"; };
+		B326E19E230171E400884ED2 /* SavingsGoalDepositGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsGoalDepositGateway.swift; sourceTree = "<group>"; };
+		B326E1B62301724100884ED2 /* FakeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeError.swift; sourceTree = "<group>"; };
+		B326E1B72301724100884ED2 /* StarlingBankChallengeTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StarlingBankChallengeTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B326E1B82301724100884ED2 /* Nimble+RxTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+RxTest.swift"; sourceTree = "<group>"; };
+		B326E1B92301724100884ED2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B326E1BB2301724100884ED2 /* Date+StartOfWeekTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+StartOfWeekTests.swift"; sourceTree = "<group>"; };
+		B326E1BC2301724100884ED2 /* Array+GroupByTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+GroupByTests.swift"; sourceTree = "<group>"; };
+		B326E1BF2301724100884ED2 /* TransactionsFetchingGatewayStubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsFetchingGatewayStubs.swift; sourceTree = "<group>"; };
+		B326E1C12301724100884ED2 /* WeeklyRoundUpsBusinessLogicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyRoundUpsBusinessLogicTests.swift; sourceTree = "<group>"; };
+		B326E1C32301724100884ED2 /* TransactionsFetchingGateway_ResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsFetchingGateway_ResponseTests.swift; sourceTree = "<group>"; };
+		B37B91AC230160C600C66446 /* BankRoundUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankRoundUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37B91AF230160C600C66446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B37B91B6230160C800C66446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37B91B9230160C800C66446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B37B91BB230160C800C66446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37B91C0230160C800C66446 /* BankRoundUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankRoundUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B591184CBA897F9CCE091A /* Pods_BankRoundUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankRoundUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37B91A9230160C600C66446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8494704785587E3F14F794 /* Pods_BankRoundUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37B91BD230160C800C66446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				374A947DA3A5A92309D1B5FE /* Pods_BankRoundUpTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B326E1482301627B00884ED2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B37B91AF230160C600C66446 /* AppDelegate.swift */,
+				B37B91B6230160C800C66446 /* Assets.xcassets */,
+				B37B91B8230160C800C66446 /* LaunchScreen.storyboard */,
+				B37B91BB230160C800C66446 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B326E181230171E400884ED2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B326E184230171E400884ED2 /* Config.swift */,
+				B326E182230171E400884ED2 /* UIViewController+ShowAlert.swift */,
+				B326E183230171E400884ED2 /* Date+StartOfWeek.swift */,
+				B326E185230171E400884ED2 /* DateFormatter+ISO8601Custom.swift */,
+				B326E186230171E400884ED2 /* Date+FromDayMonthYear.swift */,
+				B326E187230171E400884ED2 /* UUIDGenerator.swift */,
+				B326E188230171E400884ED2 /* Array+GroupBy.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B326E189230171E400884ED2 /* RoundUp */ = {
+			isa = PBXGroup;
+			children = (
+				B326E191230171E400884ED2 /* Entity */,
+				B326E19B230171E400884ED2 /* Gateway */,
+				B326E194230171E400884ED2 /* BusinessLogic */,
+				B326E198230171E400884ED2 /* Presentation */,
+				B326E18A230171E400884ED2 /* UI */,
+			);
+			path = RoundUp;
+			sourceTree = "<group>";
+		};
+		B326E18A230171E400884ED2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B326E18B230171E400884ED2 /* WeekSelection */,
+				B326E190230171E400884ED2 /* RoundUpViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B326E18B230171E400884ED2 /* WeekSelection */ = {
+			isa = PBXGroup;
+			children = (
+				B326E18C230171E400884ED2 /* EmptyWeeklyRoundUpsTableViewDataSource.swift */,
+				B326E18D230171E400884ED2 /* NonEmptyWeeklyRoundUpsTableViewDataSource.swift */,
+				B326E18E230171E400884ED2 /* WeekSelectionViewController.swift */,
+				B326E18F230171E400884ED2 /* WeeklyRoundUpTableViewCell.swift */,
+			);
+			path = WeekSelection;
+			sourceTree = "<group>";
+		};
+		B326E191230171E400884ED2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B326E192230171E400884ED2 /* WeeklyRoundUp.swift */,
+				B326E193230171E400884ED2 /* Transaction.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B326E194230171E400884ED2 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B326E195230171E400884ED2 /* SavingsGoalDepositBusinessLogic.swift */,
+				B326E196230171E400884ED2 /* WeeklyRoundUpsBusinessLogic.swift */,
+				B326E197230171E400884ED2 /* SavingsGoalCreationBusinessLogic.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		B326E198230171E400884ED2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B326E199230171E400884ED2 /* RoundUpPresenter.swift */,
+				B326E19A230171E400884ED2 /* WeekSelectionPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B326E19B230171E400884ED2 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				B326E19C230171E400884ED2 /* TransactionsFetchingGateway.swift */,
+				B326E19D230171E400884ED2 /* SavingsGoalCreationGateway.swift */,
+				B326E19E230171E400884ED2 /* SavingsGoalDepositGateway.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		B326E1B52301724100884ED2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1B62301724100884ED2 /* FakeError.swift */,
+				B326E1B72301724100884ED2 /* StarlingBankChallengeTests-Bridging-Header.h */,
+				B326E1B82301724100884ED2 /* Nimble+RxTest.swift */,
+				B326E1B92301724100884ED2 /* Info.plist */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B326E1BA2301724100884ED2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1BB2301724100884ED2 /* Date+StartOfWeekTests.swift */,
+				B326E1BC2301724100884ED2 /* Array+GroupByTests.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B326E1BD2301724100884ED2 /* RoundUp */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1BE2301724100884ED2 /* Stubs */,
+				B326E1C02301724100884ED2 /* BusinessLogic */,
+				B326E1C22301724100884ED2 /* Gateway */,
+			);
+			path = RoundUp;
+			sourceTree = "<group>";
+		};
+		B326E1BE2301724100884ED2 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1BF2301724100884ED2 /* TransactionsFetchingGatewayStubs.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		B326E1C02301724100884ED2 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1C12301724100884ED2 /* WeeklyRoundUpsBusinessLogicTests.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		B326E1C22301724100884ED2 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1C32301724100884ED2 /* TransactionsFetchingGateway_ResponseTests.swift */,
+			);
+			path = Gateway;
+			sourceTree = "<group>";
+		};
+		B37B91A3230160C600C66446 = {
+			isa = PBXGroup;
+			children = (
+				B37B91AE230160C600C66446 /* BankRoundUp */,
+				B37B91C3230160C800C66446 /* BankRoundUpTests */,
+				B37B91AD230160C600C66446 /* Products */,
+				B624A05E70E9C741A5388964 /* Pods */,
+				C835014010E37F838280A62A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B37B91AD230160C600C66446 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37B91AC230160C600C66446 /* BankRoundUp.app */,
+				B37B91C0230160C800C66446 /* BankRoundUpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37B91AE230160C600C66446 /* BankRoundUp */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1482301627B00884ED2 /* App */,
+				B326E189230171E400884ED2 /* RoundUp */,
+				B326E181230171E400884ED2 /* Common */,
+			);
+			path = BankRoundUp;
+			sourceTree = "<group>";
+		};
+		B37B91C3230160C800C66446 /* BankRoundUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				B326E1BD2301724100884ED2 /* RoundUp */,
+				B326E1BA2301724100884ED2 /* Common */,
+				B326E1B52301724100884ED2 /* Utils */,
+			);
+			path = BankRoundUpTests;
+			sourceTree = "<group>";
+		};
+		B624A05E70E9C741A5388964 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BFA386296024E160C1162A2 /* Pods-BankRoundUp.debug.xcconfig */,
+				75DD3D2FA6324B43347EA1E2 /* Pods-BankRoundUp.release.xcconfig */,
+				6637601DAF0D71DFEF3D9A0B /* Pods-BankRoundUpTests.debug.xcconfig */,
+				3B4B4A16695DA016ED2CD530 /* Pods-BankRoundUpTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C835014010E37F838280A62A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B591184CBA897F9CCE091A /* Pods_BankRoundUp.framework */,
+				B06D3A4814C3BFE0CF89471D /* Pods_BankRoundUpTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37B91AB230160C600C66446 /* BankRoundUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37B91C9230160C800C66446 /* Build configuration list for PBXNativeTarget "BankRoundUp" */;
+			buildPhases = (
+				22D77A7DD39300597822944C /* [CP] Check Pods Manifest.lock */,
+				B37B91A8230160C600C66446 /* Sources */,
+				B37B91A9230160C600C66446 /* Frameworks */,
+				B37B91AA230160C600C66446 /* Resources */,
+				7EA58111C052985009D1777A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankRoundUp;
+			productName = BankRoundUp;
+			productReference = B37B91AC230160C600C66446 /* BankRoundUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B37B91BF230160C800C66446 /* BankRoundUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37B91CC230160C800C66446 /* Build configuration list for PBXNativeTarget "BankRoundUpTests" */;
+			buildPhases = (
+				7C8AF40CD39DE14EF93A42D4 /* [CP] Check Pods Manifest.lock */,
+				B37B91BC230160C800C66446 /* Sources */,
+				B37B91BD230160C800C66446 /* Frameworks */,
+				B37B91BE230160C800C66446 /* Resources */,
+				A284DE92E5FD535790B28186 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37B91C2230160C800C66446 /* PBXTargetDependency */,
+			);
+			name = BankRoundUpTests;
+			productName = BankRoundUpTests;
+			productReference = B37B91C0230160C800C66446 /* BankRoundUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B37B91A4230160C600C66446 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = horothesun;
+				TargetAttributes = {
+					B37B91AB230160C600C66446 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					B37B91BF230160C800C66446 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = B37B91AB230160C600C66446;
+					};
+				};
+			};
+			buildConfigurationList = B37B91A7230160C600C66446 /* Build configuration list for PBXProject "BankRoundUp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B37B91A3230160C600C66446;
+			productRefGroup = B37B91AD230160C600C66446 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37B91AB230160C600C66446 /* BankRoundUp */,
+				B37B91BF230160C800C66446 /* BankRoundUpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37B91AA230160C600C66446 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37B91BA230160C800C66446 /* LaunchScreen.storyboard in Resources */,
+				B37B91B7230160C800C66446 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37B91BE230160C800C66446 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22D77A7DD39300597822944C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankRoundUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C8AF40CD39DE14EF93A42D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankRoundUpTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA58111C052985009D1777A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankRoundUp/Pods-BankRoundUp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankRoundUp/Pods-BankRoundUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A284DE92E5FD535790B28186 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BankRoundUpTests/Pods-BankRoundUpTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BankRoundUpTests/Pods-BankRoundUpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B37B91A8230160C600C66446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B326E1B3230171E400884ED2 /* SavingsGoalCreationGateway.swift in Sources */,
+				B326E1AD230171E400884ED2 /* SavingsGoalDepositBusinessLogic.swift in Sources */,
+				B326E1B1230171E400884ED2 /* WeekSelectionPresenter.swift in Sources */,
+				B326E1A5230171E400884ED2 /* Array+GroupBy.swift in Sources */,
+				B326E19F230171E400884ED2 /* UIViewController+ShowAlert.swift in Sources */,
+				B326E1A4230171E400884ED2 /* UUIDGenerator.swift in Sources */,
+				B326E1B4230171E400884ED2 /* SavingsGoalDepositGateway.swift in Sources */,
+				B326E1AF230171E400884ED2 /* SavingsGoalCreationBusinessLogic.swift in Sources */,
+				B326E1A7230171E400884ED2 /* NonEmptyWeeklyRoundUpsTableViewDataSource.swift in Sources */,
+				B326E1AB230171E400884ED2 /* WeeklyRoundUp.swift in Sources */,
+				B326E1AA230171E400884ED2 /* RoundUpViewController.swift in Sources */,
+				B326E1B2230171E400884ED2 /* TransactionsFetchingGateway.swift in Sources */,
+				B326E1A1230171E400884ED2 /* Config.swift in Sources */,
+				B37B91B0230160C600C66446 /* AppDelegate.swift in Sources */,
+				B326E1A0230171E400884ED2 /* Date+StartOfWeek.swift in Sources */,
+				B326E1A3230171E400884ED2 /* Date+FromDayMonthYear.swift in Sources */,
+				B326E1B0230171E400884ED2 /* RoundUpPresenter.swift in Sources */,
+				B326E1A9230171E400884ED2 /* WeeklyRoundUpTableViewCell.swift in Sources */,
+				B326E1A2230171E400884ED2 /* DateFormatter+ISO8601Custom.swift in Sources */,
+				B326E1A6230171E400884ED2 /* EmptyWeeklyRoundUpsTableViewDataSource.swift in Sources */,
+				B326E1AE230171E400884ED2 /* WeeklyRoundUpsBusinessLogic.swift in Sources */,
+				B326E1A8230171E400884ED2 /* WeekSelectionViewController.swift in Sources */,
+				B326E1AC230171E400884ED2 /* Transaction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37B91BC230160C800C66446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B326E1CB2301724100884ED2 /* TransactionsFetchingGateway_ResponseTests.swift in Sources */,
+				B326E1C92301724100884ED2 /* TransactionsFetchingGatewayStubs.swift in Sources */,
+				B326E1CA2301724100884ED2 /* WeeklyRoundUpsBusinessLogicTests.swift in Sources */,
+				B326E1C82301724100884ED2 /* Array+GroupByTests.swift in Sources */,
+				B326E1C72301724100884ED2 /* Date+StartOfWeekTests.swift in Sources */,
+				B326E1C52301724100884ED2 /* Nimble+RxTest.swift in Sources */,
+				B326E1C42301724100884ED2 /* FakeError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B37B91C2230160C800C66446 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37B91AB230160C600C66446 /* BankRoundUp */;
+			targetProxy = B37B91C1230160C800C66446 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B37B91B8230160C800C66446 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37B91B9230160C800C66446 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B37B91C7230160C800C66446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B37B91C8230160C800C66446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B37B91CA230160C800C66446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFA386296024E160C1162A2 /* Pods-BankRoundUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SNKL3EHYH;
+				INFOPLIST_FILE = BankRoundUp/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horothesun.BankRoundUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B37B91CB230160C800C66446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75DD3D2FA6324B43347EA1E2 /* Pods-BankRoundUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SNKL3EHYH;
+				INFOPLIST_FILE = BankRoundUp/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horothesun.BankRoundUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B37B91CD230160C800C66446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6637601DAF0D71DFEF3D9A0B /* Pods-BankRoundUpTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SNKL3EHYH;
+				INFOPLIST_FILE = BankRoundUpTests/Utils/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horothesun.BankRoundUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankRoundUp.app/BankRoundUp";
+			};
+			name = Debug;
+		};
+		B37B91CE230160C800C66446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4B4A16695DA016ED2CD530 /* Pods-BankRoundUpTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7SNKL3EHYH;
+				INFOPLIST_FILE = BankRoundUpTests/Utils/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.horothesun.BankRoundUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankRoundUp.app/BankRoundUp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B37B91A7230160C600C66446 /* Build configuration list for PBXProject "BankRoundUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37B91C7230160C800C66446 /* Debug */,
+				B37B91C8230160C800C66446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37B91C9230160C800C66446 /* Build configuration list for PBXNativeTarget "BankRoundUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37B91CA230160C800C66446 /* Debug */,
+				B37B91CB230160C800C66446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37B91CC230160C800C66446 /* Build configuration list for PBXNativeTarget "BankRoundUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37B91CD230160C800C66446 /* Debug */,
+				B37B91CE230160C800C66446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B37B91A4230160C600C66446 /* Project object */;
+}
